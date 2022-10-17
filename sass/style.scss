@@ -142,7 +142,29 @@ main {
             }
         }
     }
-
+    .scroll-totop {
+        position: fixed;
+        right: 8px;
+        bottom: 8px;
+        cursor: pointer;
+        text-align: center;
+        width: 40px;
+        z-index: 99;
+        height: 40px;
+        padding: 3px;
+        border-radius: 50%;
+        background: $orange;
+        font-size: 9px;
+        color: $biru;
+        div {
+            font-size: 9px;
+            position: relative;
+            top: -8px;
+        }
+        i {
+            font-size: 24px;
+        }
+    }
     .btn{
         font-size: 12px;
         font-weight: 700;

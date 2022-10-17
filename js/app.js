@@ -6,17 +6,19 @@ $(document).ready(function(){
     AOS.init({
         duration: 1200,
     })
+
+    
 })
 
 $(".scroll-totop").click(()=>{
     $('html, body').animate({
-        scrollTop: $(".content").offset().top
+        scrollTop: $(".usp").offset().top -50
     }, 300);
 })
 
 $(".scroll-todown").click(()=>{
     $('html, body').animate({
-        scrollTop: $(".usp").offset().top -40
+        scrollTop: $(".usp").offset().top -50
     }, 300);
 })
 
@@ -27,7 +29,18 @@ $(".hero__banner").slick({
     speed:500,
     infinite:true,
     autoplaySpeed: 4000,
-    // fade: true,
-    // cssEase: 'linear'
 })
 
+
+
+
+// console.log($(".select-usp").attr('id'));
+
+$(".usp .card").click(function(){
+    var test =$(this).attr('id');
+    // alert("show "+test+"")
+    $('html,body').animate({
+        scrollTop: $("#show-"+test+"").offset().top -30
+    },300)
+    // console.log(target);
+})
