@@ -16,7 +16,7 @@ $(".scroll-totop").click(()=>{
 
 $(".scroll-todown").click(()=>{
     $('html, body').animate({
-        scrollTop: $(".usp").offset().top
+        scrollTop: $(".usp").offset().top -40
     }, 300);
 })
 

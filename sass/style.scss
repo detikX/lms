@@ -23,14 +23,17 @@ main {
         padding: 0;
         position: relative;
         z-index: 2;
+        // margin-top: 48px;
+        // height: 85vh;
         height: 100vh;
         .scroll-todown {
             position: absolute;
             text-align: center;
             cursor: pointer;
             // text-shadow: 2px 2px #000;
-            bottom: 16px;
+            bottom: 0;
             left: 50%;
+            transform: translate(-50%,-50%);
             // background: gray;
             color: white;
             font-size: 14px;
@@ -525,5 +528,17 @@ footer {
     .bounce {
       -webkit-animation-name: bounce;
       animation-name: bounce;
+    }
+  }
+
+  .bottom-copy {
+    display: none;
+    @media screen and(max-width: 766px) {
+      position: absolute;
+      bottom: 10%;
+      left: 24px;
+      color: white;
+      font-size: 20px;
+      display: block;
     }
   }
