@@ -47,7 +47,7 @@ header
         color: black
 .navbar-collapse
     @media screen and ( max-width: $max )
-        background: rgba(0,0,0,.8 )!important
+        background: rgba(0,0,0,.9 )!important
         backdrop-filter: blur(12px)
 .sosmed
     @media screen and ( max-width: $max )
@@ -116,7 +116,8 @@ header
         height: 100%
         z-index: -1
         // background: rgba(#21409A,.8 )
-        background: linear-gradient(to right, rgba(white,.4),rgba(#21409A,.7))
+        background: rgba(33, 64, 154,.4)
+        // background: linear-gradient(to right, rgba(white,.4),rgba(#21409A,.7))
         // background: white
         // box-shadow: 0 3px 2px #ccc
         // background: #010035
@@ -220,6 +221,8 @@ header
 .w
     &-top
         width: 240px
+        @media screen and ( max-width: 766px )
+            width: auto
 
 .pointer
     &.search

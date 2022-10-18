@@ -40,7 +40,7 @@ $(".usp .card").click(function(){
     var test =$(this).attr('id');
     // alert("show "+test+"")
     $('html,body').animate({
-        scrollTop: $("#show-"+test+"").offset().top -30
+        scrollTop: $("#show-"+test+"").offset().top -50
     },300)
     // console.log(target);
 })

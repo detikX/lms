@@ -19,6 +19,13 @@ main {
         font-weight: 600;
         margin: 0 0 8px;
     }
+    
+    .bar {
+        width: 30px;
+        height: 2px;
+        margin-bottom: 8px;
+        background-color: white;
+    }
     .hero {
         padding: 0;
         position: relative;
@@ -26,6 +33,9 @@ main {
         // margin-top: 48px;
         // height: 85vh;
         height: 100vh;
+        @media screen and (max-width:766px) {
+            height: 65vh;
+        }
         .scroll-todown {
             position: absolute;
             text-align: center;
@@ -47,6 +57,9 @@ main {
         .image {
             width: 100%;
             height: 100vh;
+            @media screen and (max-width:766px) {
+                height: 65vh;
+            }
             img {
                 width: 100%;
                 height: 100%;
@@ -168,6 +181,11 @@ main {
     .btn{
         font-size: 12px;
         font-weight: 700;
+        &-third {
+            @media screen and (max-width:766px) {
+                font-size: 24px;
+            }
+        }
         &-primary {
             background-color: #21409A;
             border-color: transparent;
@@ -511,6 +529,12 @@ footer {
       transform: translate(-50%, -50%);
       left: 50%;
       top: 50%;
+      width: 240px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
     }
     .animate {
       -webkit-animation-duration: 1.5s;
