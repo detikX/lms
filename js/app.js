@@ -38,7 +38,7 @@ $("#scroll-totop").hide();
 			$('#scroll-totop').click(function () {
 				$('body,html').animate({
 					scrollTop: $(".usp").offset().top -50
-				}, 800);
+				}, 400);
 			});
 		});
 
